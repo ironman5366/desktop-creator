@@ -15,6 +15,12 @@ url = sys.argv[1]
 
 name = sys.argv[2]
 
+# Catch optional third argument
+try:
+    app = sys.argv[3]         
+except:
+    app = "xdg-open"
+
 # If this is the first run we need to create the images directory
 os.system("mkdir -p images/")
 
@@ -44,12 +50,12 @@ desktop_template = '''
 Name={0}
 Type=Application
 Icon={1}
-Exec=xdg-open {2}
+Exec={3} {2}
 '''
 
 icon_path = "{0}/{1}".format(filepath, path)
 
-final_template = desktop_template.format(site_name, icon_path, url)
+final_template = desktop_template.format(site_name, icon_path, url, app)
 print (final_template)
 
 application_dir = os.path.expanduser("~/.local/share/applications")
