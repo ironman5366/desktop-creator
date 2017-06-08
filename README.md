@@ -11,7 +11,7 @@ pip3 install -r requirements.txt
 ```
 
 ## Usage
-`sudo python3 desktop-creator.py https://reddit.com Reddit`
+`python3 desktop-creator.py https://reddit.com Reddit`
 
 ## Credits
 Most of the credit for this project should go to https://github.com/phillipsm
