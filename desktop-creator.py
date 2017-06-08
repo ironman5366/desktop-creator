@@ -15,6 +15,9 @@ url = sys.argv[1]
 
 name = sys.argv[2]
 
+# If this is the first run we need to create the images directory
+os.system("mkdir -p images/")
+
 # Make a request to the webpage to find the icon
 favicon_url = pyfav_utils.get_favicon_url(url)
 
