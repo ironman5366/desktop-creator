@@ -13,6 +13,11 @@ pip3 install -r requirements.txt
 ## Usage
 `python3 desktop-creator.py https://reddit.com Reddit`
 
+## Specify Browser 
+Optionally, you may specify which browser the link should open in.
+
+`python3 desktop-creator.py https://netflix.com Netflix google-chrome`
+
 ## Credits
 Most of the credit for this project should go to https://github.com/phillipsm
 who wrote the scripts for the favicon downloading as part of
